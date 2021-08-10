@@ -6,9 +6,9 @@
 * 
 *  Name: _______Yuelin Wen_______________ Student ID: ____114379209__________ Date: _______Aug 10 2021__________
 *
-*  Online Link to Music App: _________https://spotify-music-app-mu.vercel.app/newReleases_________________________________________________
+*  Online Link to Music App: _________https://spotify-music-app-mu.vercel.app/newReleases
 *
-*  Online Link to User Api: __________https://fast-gorge-00438.herokuapp.com__________________________________________________
+*  Online Link to User Api: __________https://fast-gorge-00438.herokuapp.com
 *
 ********************************************************************************/ 
 
