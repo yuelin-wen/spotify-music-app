@@ -26,9 +26,18 @@ export class AlbumComponent implements OnInit, OnDestroy {
   }
 
   addToFavourites(trackID: number) {
-    if (this.mds.addToFavourites(trackID)) {
-      this.msb.open("Adding to Favourites...", "Done", { duration: 1500 });
-    }
+    // if (this.mds.addToFavourites(trackID)) {
+    //   this.msb.open("Adding to Favourites...", "Done", { duration: 1500 });
+    // }
+    this.mds.addToFavourites(trackID).subscribe(
+      (data) => {
+        this.msb.open("Adding to Favourites...", "Done", { duration: 1500 });
+      },
+      (err) => {
+        this.msb.open("Unable to Favourites...", "Done", { duration: 1500 });
+        console.log(err);
+      }
+    )
   }
 
   ngOnDestroy() {

@@ -3,27 +3,27 @@
   <!-- Top navbar -->
   <mat-toolbar class="navbar" color="primary">
 
-    <button mat-icon-button (click)="snav.toggle()">
+    <button mat-icon-button (click)="snav.toggle()" *ngIf="token">
       <mat-icon>menu</mat-icon>
     </button>
 
     <a class="navbar-brand" matTooltip="Home" routerLink="newReleases">
       <h1>
-        Spotify Music
+        WEB422
       </h1>
     </a>
 
     <span class="navbar-spacer"></span>
 
-    <button mat-button [matMenuTriggerFor]="userMenu">
+    <button mat-button [matMenuTriggerFor]="userMenu" *ngIf="token">
       <mat-icon>person</mat-icon>
       <span fxShow fxHide.xs>
-        Yuelin Wen
+        {{ token.userName }}
       </span>
     </button>
     <mat-menu #userMenu="matMenu" xPosition="before" yPosition="above" [overlapTrigger]="false">
 
-      <a mat-menu-item>
+      <a mat-menu-item (click)="logout()">
         <mat-icon>exit_to_app</mat-icon>
         <span>Log out</span>
       </a>
@@ -34,7 +34,7 @@
 
   <mat-sidenav-container>
     <!-- Side nav -->
-    <mat-sidenav #snav [opened]="false" [mode]="'side'" [fixedInViewport]="true" fixedTopGap="56">
+    <mat-sidenav #snav [opened]="token && snav.opened" [mode]="'side'" [fixedInViewport]="true" fixedTopGap="56">
 
       <mat-nav-list>
         <div>
