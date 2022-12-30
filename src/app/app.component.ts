@@ -8,7 +8,7 @@
 *
 *  Online Link to Music App: _________https://spotify-music-app-mu.vercel.app/newReleases
 *
-*  Online Link to User Api: __________https://fast-gorge-00438.herokuapp.com
+*  Online Link to User Api: __________https://spotify-mongodb-api.vercel.app
 *
 ********************************************************************************/ 
 
