@@ -1,8 +1,6 @@
 # Spotify Music App Preview
 
-API: https://spotify-mongodb-api.vercel.app
-
-repo: https://github.com/yuelin-wen/spotify-mongodb-api
+A music listening App, build with Angular & NodeJS
 
  try username: abc, password: 123456 or register new one
  
